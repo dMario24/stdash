@@ -1,15 +1,15 @@
 [project]
 name = "stdash"
-version = "0.4.0"
+version = "0.4.1"
 description = "Default template for PDM package"
 authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
 ]
 dependencies = [
-    "streamlit>=1.38.0",
-    "matplotlib>=3.9.2",
+    "streamlit",
+    "matplotlib",
 ]
-requires-python = "==3.11.*"
+requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
