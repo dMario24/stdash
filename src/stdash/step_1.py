@@ -2,16 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-import requests
 
-
+from stdash.data import load_data
 
 
 # https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
 st.set_page_config(
-    # page_title="CNN JOB MON",
-    # layout="centered",
-    # page_icon=":shark:",
+    page_title="CNN JOB MON",
+    layout="centered",
+    page_icon=":shark:",
     initial_sidebar_state="expanded")
 
 # https://docs.streamlit.io/get-started/fundamentals/additional-features
@@ -19,12 +18,6 @@ st.markdown("# STEP 1 🎈")
 st.sidebar.markdown("# STEP 1 🎈")
 
 st.title('CNN JOB MON')
-
-def load_data():
-    url = 'http://43.202.66.118:8077/all'
-    r = requests.get(url)
-    d = r.json()
-    return d
 
 data = load_data()
 df = pd.DataFrame(data)
