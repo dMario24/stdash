@@ -1,6 +1,6 @@
 [project]
 name = "stdash"
-version = "0.2.0"
+version = "0.3.0"
 description = "Default template for PDM package"
 authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
@@ -16,3 +16,9 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.dev-dependencies]
+note = [
+    "notebook>=7.2.2",
+    "vega-datasets>=0.9.0",
+]
