@@ -19,8 +19,7 @@ st.sidebar.markdown("# STEP 3 ❄️")
 
 st.title('CNN JOB MON')
 
-data = load_data()
-df = pd.DataFrame(data)
+df = load_data()
 
 df['request_time'] = pd.to_datetime(df['request_time']).dt.floor('30min')
 df['prediction_time'] = pd.to_datetime(df['prediction_time']).dt.floor('30min')
