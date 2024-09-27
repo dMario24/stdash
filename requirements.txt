@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 matplotlib
-stdash @ git+https://github.com/dMario24/stdash.git@0.4/deploy
+git+https://github.com/dMario24/stdash.git@0.4
